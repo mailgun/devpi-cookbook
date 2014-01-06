@@ -15,6 +15,9 @@
     "supervisor-daemon": {
       "path": "./test/cookbooks/supervisor-daemon"
     },
+    "lwrp-tester": {
+      "path": "./test/cookbooks/lwrp-tester"
+    },
     "devpi": {
       "path": "."
     },
@@ -31,7 +34,7 @@
       "locked_version": "1.1.12"
     },
     "yum": {
-      "locked_version": "2.3.2"
+      "locked_version": "2.4.4"
     },
     "python": {
       "locked_version": "1.4.0"

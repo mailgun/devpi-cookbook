@@ -5,8 +5,10 @@ guard :rspec do
   watch(%r{^attributes/.+\.rb$}) { "spec" }
   watch(%r{^templates/.+\.erb$}) { "spec" }
   watch('spec/support/matchers.rb') { "spec" }
+  watch(%r{^spec/.+_lwrp_spec\.rb$})
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^recipes/(.+)\.rb$}) { |m| "spec/#{m[1]}_spec.rb" }
+  watch(%r{^(providers|resources)/(.+)\.rb$}) { |m| "spec/#{m[2]}_lwrp_spec.rb" }
 end
 
 guard 'kitchen' do
