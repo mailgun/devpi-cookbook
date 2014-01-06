@@ -121,6 +121,31 @@ create a workstation from which you can manage a devpi-server installation.
 [3]: http://smarden.org/runit/
 [4]: http://nginx.org/
 
+### Resources
+
+#### devpi_user
+Creates a new user in an installed devpi server.  This uses the JSON-based
+HTTP API exposed by devpi server to create the new user.
+
+##### Attributes
+<dl>
+<dt>user</dt>
+    <dd>the name of the user to create.  This is the <b>name attribute</b>
+        of the resource.</dd>
+</dl>
+
+##### Actions
+<dl>
+<dt>:create</dt>
+    <dd>Create the user.  This is the <b>default</b> action.</dd>
+</dl>
+
+##### Examples
+
+```
+    devpi_user 'me'    # creates a user named "me"
+```
+
 ## Contributing
 
 1. Fork the repository on Github
