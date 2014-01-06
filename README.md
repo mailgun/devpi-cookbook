@@ -1,5 +1,5 @@
-devpi Cookbook
-==============
+# devpi Cookbook
+
 This cookbook installs and configures a devpi server.  [Devpi][1] is a
 PyPI-compatible Python Index server that acts as both a freestanding
 Python Index as well as a pull-through cache of the official Python 
@@ -7,13 +7,12 @@ Package Index.
 
 [1]: http://doc.devpi.net/latest/
 
-Requirements
-------------
+## Requirements
+
 * **Python Versions**: Python 2.6 amd 2.7
 * **Operating Systems**: Debian/Ubuntu, Enterprise Linux/CentOS
 
-Attributes
-----------
+## Attributes
 
 <table>
   <tr>
@@ -71,8 +70,8 @@ Attributes
   </tr>
 </table>
 
-Usage
------
+## Usage
+
 Include recipes from this cookbook to install the [devpi server][1] as
 a daemon and, optionally, expose the server via an nginx endpoint.  This
 cookbook supports a few different use cases.
@@ -122,8 +121,7 @@ create a workstation from which you can manage a devpi-server installation.
 [3]: http://smarden.org/runit/
 [4]: http://nginx.org/
 
-Contributing
-------------
+## Contributing
 
 1. Fork the repository on Github
 2. Create a feature branch named *"feature/my_feature"* from `development`
@@ -144,13 +142,13 @@ Contributing
 
 *HACKING.md* contains additional details about developing in this cookbook.
 
-License and Authors
--------------------
-#### Cookbook Authors:
+## License and Authors
+
+### Cookbook Authors:
 
 * Dave Shawley
 
-#### License:
+### License:
 
 Copyright (C) 2013-2014 Dave Shawley
 
