@@ -46,6 +46,13 @@ python_pip 'devpi-server' do
   version node[:devpiserver][:version] if node[:devpiserver].key? :version
 end
 
+python_pip 'devpi-web' do
+  package_name 'devpi-web'
+  action :upgrade
+  virtualenv '/opt/devpi-server'
+  version node[:devpiweb][:version] if node[:devpiweb].key? :version
+end
+
 directory 'devpi-server directory' do
   action :create
   path node[:devpiserver][:server_root]
